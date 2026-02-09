@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synergy - Student Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo">Synergy</div>
+            <ul class="nav-links">
+                <li><a href="#dashboard" class="active">Dashboard</a></li>
+                <li><a href="#grades">Grades</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#assignments">Assignments</a></li>
+                <li><a href="#profile">Profile</a></li>
+            </ul>
+            <div class="user-menu">
+                <span class="user-name">John Doe</span>
+                <button class="logout-btn">Logout</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Dashboard Section -->
+        <section id="dashboard" class="section active">
+            <h1>Welcome, John!</h1>
+            <div class="dashboard-grid">
+                <div class="card welcome-card">
+                    <h2>Your Summary</h2>
+                    <p>You have <strong>3</strong> pending assignments</p>
+                    <p>Current GPA: <strong>3.75</strong></p>
+                    <p>Attendance: <strong>95%</strong></p>
+                </div>
+                <div class="card upcoming-card">
+                    <h2>Upcoming Events</h2>
+                    <ul>
+                        <li>📅 Math Test - Feb 15</li>
+                        <li>📅 History Project Due - Feb 20</li>
+                        <li>📅 Science Lab - Feb 22</li>
+                    </ul>
+                </div>
+                <div class="card recent-card">
+                    <h2>Recent Grades</h2>
+                    <ul>
+                        <li>Biology Exam: <span class="grade-a">A</span></li>
+                        <li>English Essay: <span class="grade-a">A-</span></li>
+                        <li>Math Quiz: <span class="grade-b">B+</span></li>
+                    </ul>
+                </div>
+                <div class="card notifications-card">
+                    <h2>Notifications</h2>
+                    <ul>
+                        <li>✓ Assignment submitted successfully</li>
+                        <li>✓ Grade posted for Algebra II</li>
+                        <li>✓ New message from Mr. Johnson</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Grades Section -->
+        <section id="grades" class="section">
+            <h1>Grades</h1>
+            <table class="grades-table">
+                <thead>
+                    <tr>
+                        <th>Course</th>
+                        <th>Teacher</th>
+                        <th>Current Grade</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Biology</td>
+                        <td>Mrs. Smith</td>
+                        <td><span class="grade-a">A (92%)</span></td>
+                        <td><span class="status-good">Excellent</span></td>
+                    </tr>
+                    <tr>
+                        <td>English Literature</td>
+                        <td>Mr. Brown</td>
+                        <td><span class="grade-a">A- (89%)</span></td>
+                        <td><span class="status-good">Excellent</span></td>
+                    </tr>
+                    <tr>
+                        <td>Algebra II</td>
+                        <td>Mr. Johnson</td>
+                        <td><span class="grade-b">B+ (85%)</span></td>
+                        <td><span class="status-good">Good</span></td>
+                    </tr>
+                    <tr>
+                        <td>World History</td>
+                        <td>Ms. Davis</td>
+                        <td><span class="grade-b">B (82%)</span></td>
+                        <td><span class="status-average">Average</span></td>
+                    </tr>
+                    <tr>
+                        <td>Physical Education</td>
+                        <td>Coach Wilson</td>
+                        <td><span class="grade-a">A (95%)</span></td>
+                        <td><span class="status-good">Excellent</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Schedule Section -->
+        <section id="schedule" class="section">
+            <h1>Class Schedule</h1>
+            <div class="schedule-grid">
+                <div class="schedule-day">
+                    <h3>Monday</h3>
+                    <div class="class-block">
+                        <strong>Biology</strong><br>8:00 AM - 9:00 AM<br>Room 201
+                    </div>
+                    <div class="class-block">
+                        <strong>English</strong><br>9:15 AM - 10:15 AM<br>Room 105
+                    </div>
+                    <div class="class-block">
+                        <strong>Lunch</strong><br>10:15 AM - 11:00 AM<br>Cafeteria
+                    </div>
+                </div>
+                <div class="schedule-day">
+                    <h3>Tuesday</h3>
+                    <div class="class-block">
+                        <strong>Algebra II</strong><br>8:00 AM - 9:00 AM<br>Room 310
+                    </div>
+                    <div class="class-block">
+                        <strong>World History</strong><br>9:15 AM - 10:15 AM<br>Room 210
+                    </div>
+                    <div class="class-block">
+                        <strong>Lunch</strong><br>10:15 AM - 11:00 AM<br>Cafeteria
+                    </div>
+                </div>
+                <div class="schedule-day">
+                    <h3>Wednesday</h3>
+                    <div class="class-block">
+                        <strong>Biology Lab</strong><br>8:00 AM - 9:30 AM<br>Lab 102
+                    </div>
+                    <div class="class-block">
+                        <strong>PE</strong><br>9:45 AM - 10:45 AM<br>Gym
+                    </div>
+                    <div class="class-block">
+                        <strong>Lunch</strong><br>10:45 AM - 11:30 AM<br>Cafeteria
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Assignments Section -->
+        <section id="assignments" class="section">
+            <h1>Assignments</h1>
+            <div class="assignments-list">
+                <div class="assignment-card">
+                    <div class="assignment-header">
+                        <h3>Math Problem Set #5</h3>
+                        <span class="due-date">Due: Feb 15</span>
+                    </div>
+                    <p><strong>Course:</strong> Algebra II</p>
+                    <p><strong>Status:</strong> <span class="status-pending">Not Started</span></p>
+                    <p>Complete problems 1-50 from chapter 7</p>
+                </div>
+
+                <div class="assignment-card">
+                    <div class="assignment-header">
+                        <h3>History Research Paper</h3>
+                        <span class="due-date">Due: Feb 20</span>
+                    </div>
+                    <p><strong>Course:</strong> World History</p>
+                    <p><strong>Status:</strong> <span class="status-in-progress">In Progress</span></p>
+                    <p>5-page paper on the French Revolution</p>
+                </div>
+
+                <div class="assignment-card completed">
+                    <div class="assignment-header">
+                        <h3>Biology Chapter Summary</h3>
+                        <span class="due-date">Due: Feb 10</span>
+                    </div>
+                    <p><strong>Course:</strong> Biology</p>
+                    <p><strong>Status:</strong> <span class="status-completed">Completed</span></p>
+                    <p>Submitted on Feb 9</p>
+                </div>
+
+                <div class="assignment-card">
+                    <div class="assignment-header">
+                        <h3>English Essay</h3>
+                        <span class="due-date">Due: Feb 25</span>
+                    </div>
+                    <p><strong>Course:</strong> English Literature</p>
+                    <p><strong>Status:</strong> <span class="status-pending">Not Started</span></p>
+                    <p>Analyze themes in "To Kill a Mockingbird"</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Profile Section -->
+        <section id="profile" class="section">
+            <h1>Student Profile</h1>
+            <div class="profile-container">
+                <div class="profile-header">
+                    <div class="profile-avatar">JD</div>
+                    <div class="profile-info">
+                        <h2>John Doe</h2>
+                        <p><strong>Grade:</strong> 10th Grade</p>
+                        <p><strong>Student ID:</strong> 123456</p>
+                        <p><strong>Email:</strong> john.doe@school.edu</p>
+                    </div>
+                </div>
+
+                <div class="profile-stats">
+                    <div class="stat-box">
+                        <h3>Current GPA</h3>
+                        <p class="stat-value">3.75</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>Attendance</h3>
+                        <p class="stat-value">95%</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>Classes</h3>
+                        <p class="stat-value">5</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>Assignments</h3>
+                        <p class="stat-value">3 Pending</p>
+                    </div>
+                </div>
+
+                <div class="profile-details">
+                    <h3>Contact Information</h3>
+                    <p><strong>Phone:</strong> (555) 123-4567</p>
+                    <p><strong>Address:</strong> 123 Main St, City, State 12345</p>
+                    <p><strong>Parent/Guardian Email:</strong> parent@email.com</p>
+                    <p><strong>Emergency Contact:</strong> (555) 987-6543</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
